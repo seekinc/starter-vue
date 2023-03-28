@@ -8,10 +8,6 @@ import 'element-ui/lib/theme-chalk/index.css'
 // 引入代码高亮css样式
 import 'highlight.js/styles/monokai-sublime.css'
 
-// 加载进度条
-import NProgress from 'nprogress'
-import 'nprogress/nprogress.css'
-
 // 导入全局样式,js表
 import './assets/css/global.css'
 import './assets/js/global.js'
@@ -20,6 +16,11 @@ import './assets/js/global.js'
 import VueQuillEditor from 'vue-quill-editor'
 import { Quill } from 'vue-quill-editor'
 import Video from './quill/video'
+
+// 加载进度条
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
+
 // 导入富文本编辑器的 css 样式
 import 'quill/dist/quill.core.css'
 import 'quill/dist/quill.snow.css'
@@ -42,7 +43,6 @@ axios.interceptors.response.use(config => {
   // 最后必须return
   return config
 })
-
 
 Vue.prototype.$http = axios
 
